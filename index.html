@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miit</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header-wrapper">
+            <div class="top-bar-wrapper"></div>
+            <div class="menu-bar-wrapper"></div>
+        </div>
+        <div class="content-wrapper">
+            <div class="content-container">
+                <div class="content-grid">
+                    <div class="guests-wrapper">
+                        <div class="guest-container">
+                            <div class="guest-flex">
+                                <div class="guest-header-wrapper section-header-wrapper">
+                                    <span>Participants <small id="participants-number"></small></span>
+                                    <div class="buttons--side">
+                                        <button class="button-header">
+                                            <svg>
+                                                <use xlink:href="#settings-1"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="button-header">
+                                            <svg>
+                                                <use xlink:href="#collapse-arrows"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="button-header">
+                                            <svg>
+                                                <use xlink:href="#chevron-down"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="guest-sub-header-wrapper sub-header">
+                                    <span>Host <small>(1)</small></span>
+                                </div>
+                                <div class="guest-itemsd-wrapper" id="host-items-wrapper">
+                                    <div class="guest-item-wrapper">
+                                        <div class="guest-item-container">
+                                            <div class="guest-item-image">
+                                                <!-- <div class="guest-item-image-container">
+                                                    <img src="http://source.unsplash.com/random/100x100" alt="">
+                                                </div> -->
+                                                <div class="guest-item-image-container">
+                                                    <span>LM</span>
+                                                </div>
+                                                <div class="status-item online" data-status="online"></div>
+                                            </div>
+                                            <div class="guest-item-info">
+                                                <a href="" data-info="guest" class="guest-name-info">Lorik Mehmeti</a>
+                                                <a href="" data-info="guest" class="guest-place-info">Kosovo</a>
+                                            </div> 
+                                            <div class="buttons--side">
+                                                <button class="button-header" style="--size: 32px;">
+                                                    <svg>
+                                                        <use xlink:href="#microphone"></use>
+                                                    </svg>
+                                                </button>
+                                                <button class="button-header" style="--size: 32px;">
+                                                    <svg>
+                                                        <use xlink:href="#camera"></use>
+                                                    </svg>
+                                                </button>
+                                                <button class="button-header" style="--size: 32px;">
+                                                    <svg>
+                                                        <use xlink:href="#info"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="guest-sub-header-wrapper sub-header">
+                                    <span id="attendee-text">Attendee <small id="attendee-count"></small></span>
+                                </div>
+                                <div class="guest-items-wrapper" id="attendee-wrapper">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-wrapper">
+                        <div class="guest-header-wrapper section-header-wrapper">
+                            <button class="button-header">
+                                <svg>
+                                    <use xlink:href="#add-icon"></use>
+                                </svg>
+                            </button>
+                            <div class="buttons--side">
+                                <button class="button-header">
+                                    <svg>
+                                        <use xlink:href="#copy-icon"></use>
+                                    </svg>
+                                </button>
+                                <span>64edb978-e72e-11eb-ba80-0242ac130004 </span>
+                                <button class="button-header" onclick="full_screen()">
+                                    <svg>
+                                        <use xlink:href="#maximize"></use>
+                                    </svg>
+                                </button>
+                                <button class="button-header">
+                                    <svg>
+                                        <use xlink:href="#chevron-down"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="video-container" muted>
+                            <video src="video-2.mp4" id="video"></video>
+
+                            <div class="video-information-wrapper">
+                                <div class="video-information-container">
+                                    <div class="video-information-text">
+                                        <h1 class="video-information-title" id="video-information-title">
+                                            Front UX & Product Management Case Study Conference
+                                        </h1>
+                                        <h5 class="video-information-tag">Web Development</h5>
+                                    </div>
+                                    <div class="buttons-video-information">
+                                        <div class="video-buttons--wrapper">
+                                            <button type="button" class="video--button video--button-mic">
+                                                <svg>
+                                                    <use xlink:href="#microphone"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="video--button">
+                                                <svg>
+                                                    <use xlink:href="#camera"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="video--button">
+                                                <svg>
+                                                    <use xlink:href="#airplay"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="audio-video-wrapper">
+                        <div class="guest-header-wrapper section-header-wrapper">
+                            <span id="participants-number">Video and Audio</span>
+                            <div class="buttons--side">
+                                <button class="button-header">
+                                    <svg>
+                                        <use xlink:href="#settings-1"></use>
+                                    </svg>
+                                </button>
+                                <button class="button-header">
+                                    <svg>
+                                        <use xlink:href="#collapse-arrows"></use>
+                                    </svg>
+                                </button>
+                                <button class="button-header">
+                                    <svg>
+                                        <use xlink:href="#chevron-down"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- <button onclick="getVideoCamera()">click</button> -->
+                        <div class="video-camera-wrapper">
+                            <video src="" class="video-camera" id="draggable"></video>
+                        </div>
+                    </div>
+                    <div class="chat-wrapper">
+                        <div class="guest-header-wrapper section-header-wrapper">
+                            <span id="participants-number">Chat</span>
+                            <div class="buttons--side">
+                                <button class="button-header">
+                                    <svg>
+                                        <use xlink:href="#settings-1"></use>
+                                    </svg>
+                                </button>
+                                <button class="button-header">
+                                    <svg>
+                                        <use xlink:href="#collapse-arrows"></use>
+                                    </svg>
+                                </button>
+                                <button class="button-header">
+                                    <svg>
+                                        <use xlink:href="#chevron-down"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="chat-conversation-wrapper">
+                            <div class="chat-messages-wrapper">
+                                <div class="messages-wrapper" id="chat">
+                        
+                                </div>
+                            </div>
+                            <div class="chat-input-wrapper">
+                                <textarea placeholder="Send a message" class="input-chat" id="chat-textarea"></textarea>
+                                <div class="chat-icons">
+                                    <div class="buttons--side">
+                                        <button class="button-header" style="--size: 32px">
+                                            <svg>
+                                                <use xlink:href="#microphone"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="button-header" style="--size: 32px">
+                                            <svg>
+                                                <use xlink:href="#emoji"></use>
+                                            </svg>
+                                        </button>
+                                        <button class="button-header" style="--size: 32px">
+                                            <svg>
+                                                <use xlink:href="#attach-file"></use>
+                                            </svg>
+                                        </button>
+
+                                        <button class="button-header button--send" style="--size: 32px" onclick="createCommentFromText()">
+                                            <svg>
+                                                <use xlink:href="#send-icon"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <svg class="hide">
+        <symbol id="send-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M219.536 121.02L50.62 26.428a8 8 0 0 0-11.443 9.67l31.861 89.211a8 8 0 0 1 0 5.382L39.178 219.9a8 8 0 0 0 11.443 9.671l168.915-94.592a8 8 0 0 0 0-13.96z" opacity=".2" fill="currentColor"></path><path d="M223.444 114.04L54.53 19.446A16 16 0 0 0 31.644 38.79L63.504 128l-31.86 89.21a16.04 16.04 0 0 0 15.04 21.41a16.039 16.039 0 0 0 7.846-2.067l168.913-94.592a16.002 16.002 0 0 0 .001-27.922zM46.714 222.583L77.639 136H136a8 8 0 0 0 0-16H77.638L46.72 33.412L215.626 128z" fill="currentColor"></path></symbol>
+        <symbol id="airplay" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M134.077 154.794a8 8 0 0 0-12.149 0l-48.003 56A8 8 0 0 0 80 224h96a8 8 0 0 0 6.074-13.206zM97.394 208l30.608-35.708L158.606 208zM232 64v112a24.027 24.027 0 0 1-24 24h-16a8 8 0 0 1 0-16h16a8.01 8.01 0 0 0 8-8V64a8.01 8.01 0 0 0-8-8H48a8.01 8.01 0 0 0-8 8v112a8.01 8.01 0 0 0 8 8h16a8 8 0 0 1 0 16H48a24.027 24.027 0 0 1-24-24V64a24.027 24.027 0 0 1 24-24h160a24.027 24.027 0 0 1 24 24z" fill="currentColor"></path></symbol>
+        <symbol id="attach-file" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M209.655 122.342a8 8 0 0 1-.008 11.313l-82.053 81.947a56 56 0 0 1-79.192-79.2L147.671 35.75a40 40 0 1 1 56.607 56.528L105.01 192.931a24 24 0 1 1-33.98-33.902l83.262-84.644a8 8 0 0 1 11.406 11.22L82.39 170.297a8 8 0 1 0 11.266 11.36l99.27-100.652a24 24 0 1 0-33.902-33.98l-99.27 100.65a40 40 0 1 0 56.53 56.61l82.057-81.95a7.999 7.999 0 0 1 11.314.007z" fill="currentColor"></path></symbol>
+        <symbol id="emoji" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><circle cx="128" cy="128" r="96" opacity=".2" fill="currentColor"></circle><circle cx="92" cy="108" r="12" fill="currentColor"></circle><circle cx="164" cy="108" r="12" fill="currentColor"></circle><path d="M128 24a104 104 0 1 0 104 104A104.118 104.118 0 0 0 128 24zm0 192a88 88 0 1 1 88-88a88.1 88.1 0 0 1-88 88z" fill="currentColor"></path><path d="M173.584 145.071a8 8 0 0 0-10.93 2.92a40.195 40.195 0 0 1-19.087 16.865a39.96 39.96 0 0 1-43.852-8.576a40.164 40.164 0 0 1-6.368-8.29a8 8 0 0 0-13.85 8.013a56.194 56.194 0 0 0 26.702 23.589a56.056 56.056 0 0 0 70.304-23.59a8 8 0 0 0-2.919-10.93z" fill="currentColor"></path></symbol>
+        <symbol id="microphone-muted" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M128 24a40 40 0 0 1 40 40v64a40 40 0 0 1-40 40a40 40 0 0 1-40-40V64a40 40 0 0 1 40-40z" opacity=".2" fill="currentColor"></path><path d="M213.92 210.618l-160-176a8 8 0 1 0-11.84 10.764L80 87.094V128a47.99 47.99 0 0 0 73.912 40.397l10.875 11.962a63.992 63.992 0 0 1-100.396-45.238a8 8 0 0 0-15.903 1.758A79.837 79.837 0 0 0 120 207.597V232a8 8 0 0 0 16 0v-24.41a79.72 79.72 0 0 0 39.62-15.314l26.46 29.106a8 8 0 1 0 11.84-10.764zM128 160a32.037 32.037 0 0 1-32-32v-23.306l46.92 51.611A31.935 31.935 0 0 1 128 160z" fill="currentColor"></path><path d="M89.75 49.788a8.001 8.001 0 0 0 11.013-2.595A32.004 32.004 0 0 1 160 64v60.429a8 8 0 1 0 16 0V64a48.005 48.005 0 0 0-88.845-25.225a8 8 0 0 0 2.595 11.013z" fill="currentColor"></path><path d="M192.165 161.665a7.993 7.993 0 0 0 10.364-4.536a79.616 79.616 0 0 0 4.983-20.25a8 8 0 0 0-15.903-1.758a63.674 63.674 0 0 1-3.98 16.18a8 8 0 0 0 4.536 10.364z" fill="currentColor"></path></symbol>
+        <symbol id="maximize" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M432 320v112H320"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M421.8 421.77L304 304"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M80 192V80h112"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M90.2 90.23L208 208"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M320 80h112v112"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M421.77 90.2L304 208"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M192 432H80V320"></path><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M90.23 421.8L208 304"></path></symbol>
+        <symbol id="copy-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></symbol>
+        <symbol id="add-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></symbol>
+        <symbol id="settings-1" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36">
+            <path d="M11.1 18c0 3.9 3.1 7 7 7s7-3.1 7-7s-3.1-7-7-7s-7 3.1-7 7zm12 0c0 2.8-2.2 5-5 5s-5-2.2-5-5s2.2-5 5-5s5 2.2 5 5z"
+                fill="currentColor"></path>
+            <path d="M32.8 14.7l-2.8-.9l-.1-.3c-.8 0-1.6-.2-2.4-.4c.3.6.6 1.3.8 1.9l.1.5l3.6 1.1v2.8l-3.6 1.1l-.1.5l-.9 2.1l-.3.5l1.8 3.3l-2 2l-3.3-1.8l-.5.3c-.7.4-1.4.7-2.1.9l-.5.1l-1.1 3.6h-2.8l-1.1-3.6l-.5-.1l-2.1-.9l-.5-.3l-3.3 1.8l-2-2l1.8-3.3l-.3-.5c-.4-.7-.7-1.4-.9-2.1l-.1-.5L4 19.4v-2.8l3.4-1l.2-.5c.2-.8.5-1.5.9-2.2l.3-.5l-1.7-3.3l2-2l3.2 1.8l.5-.3c.7-.4 1.4-.7 2.2-.9l.5-.2L16.6 4h2.8l1.1 3.5l.5.2c.7.2 1.3.5 1.9.8c-.3-.8-.4-1.6-.4-2.5l-.4-.2l-.9-2.8c-.2-.5-.8-1-1.5-1h-3.4c-.7 0-1.3.5-1.4 1.2L14 6c-.6.1-1.1.3-1.6.6L9.8 5.2c-.6-.3-1.4-.2-1.9.3L5.5 7.9c-.5.5-.6 1.3-.3 1.9l1.3 2.5c-.2.5-.4 1.1-.6 1.6l-2.8.9c-.6.2-1.1.8-1.1 1.5v3.4c0 .7.5 1.3 1.2 1.5l2.8.9l.6 1.5l-1.4 2.6c-.3.6-.2 1.4.3 1.9l2.4 2.4c.5.5 1.3.6 1.9.3l2.6-1.4l1.5.6l.9 2.9c.2.6.8 1.1 1.5 1.1h3.4c.7 0 1.3-.5 1.5-1.1l.9-2.9l1.5-.6l2.6 1.4c.6.3 1.4.2 1.9-.3l2.4-2.4c.5-.5.6-1.3.3-1.9l-1.4-2.6l.6-1.5l2.9-.9c.6-.2 1.1-.8 1.1-1.5v-3.4c0-.7-.5-1.4-1.2-1.6z"
+                fill="currentColor"></path>
+            <circle  cx="30" cy="6" r="5"
+                fill="currentColor"></circle>
+        </symbol>
+        <symbol id="chevron-down" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6l-6-6l1.41-1.42z" fill="currentColor"></path></symbol>
+        <symbol id="collapse-arrows" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M19.5 3.09L15 7.59V4h-2v7h7V9h-3.59l4.5-4.5l-1.41-1.41M4 13v2h3.59l-4.5 4.5l1.41 1.41l4.5-4.5V20h2v-7H4z" fill="currentColor"></path></symbol>
+        <symbol id="settings" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" stroke="currentColor"
+                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
+            </path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" stroke="currentColor"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z">
+            </path>
+        </symbol>
+        <symbol id="camera-off" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M244.016 73.081a8.001 8.001 0 0 0-7.985-.027L192 98.214V92a40.046 40.046 0 0 0-40-40h-41.117a8 8 0 0 0 0 16H152a24.027 24.027 0 0 1 24 24v52a8.033 8.033 0 0 0 .065.972c.01.085.025.17.039.254q.057.372.147.73c.02.077.038.154.06.23a7.944 7.944 0 0 0 .734 1.758c.038.067.08.13.12.196q.19.313.405.606c.053.07.104.142.159.212a8.167 8.167 0 0 0 .616.7c.011.012.025.022.037.034a8.012 8.012 0 0 0 .675.59c.07.055.141.107.213.16q.312.229.645.428c.04.024.076.053.116.076l56 32A8 8 0 0 0 248 176V80a7.998 7.998 0 0 0-3.984-6.919zM232 162.215l-40-22.858v-22.714l40-22.858zM40.83 18.618a8 8 0 0 0-11.84 10.764L49.55 52H24A16.018 16.018 0 0 0 8 68v96a40.046 40.046 0 0 0 40 40h128a15.898 15.898 0 0 0 9.122-2.873l32.958 36.255a8 8 0 1 0 11.84-10.764zM48 188a24.027 24.027 0 0 1-24-24V68h40.097l109.09 120z" fill="currentColor"></path></symbol>
+        <symbol id="info" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M128 24a104 104 0 1 0 104 104A104.118 104.118 0 0 0 128 24zm0 192a88 88 0 1 1 88-88a88.1 88.1 0 0 1-88 88zm16-40a8 8 0 0 1-8 8h-8a8 8 0 0 1-8-8v-48a8 8 0 0 1 0-16h8a8 8 0 0 1 8 8v48a8 8 0 0 1 8 8zm-30-92a12 12 0 1 1 12 12a12 12 0 0 1-12-12z" fill="currentColor"></path></symbol>
+        <symbol id="camera" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M246.023 69.621a12.003 12.003 0 0 0-11.977-.04l-38.063 21.75A44.043 44.043 0 0 0 152 48H24A20.022 20.022 0 0 0 4 68v96a44.05 44.05 0 0 0 44 44h128a20.022 20.022 0 0 0 20-20v-23.322l38.046 21.741A12 12 0 0 0 252 176V80a12.002 12.002 0 0 0-5.977-10.379zM172 184H48a20.022 20.022 0 0 1-20-20V72h124a20.022 20.022 0 0 1 20 20zm56-28.678l-32-18.286v-18.072l32-18.286z" fill="currentColor"></path></symbol>
+        <symbol id="microphone" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path d="M128 24a40 40 0 0 1 40 40v64a40 40 0 0 1-40 40a40 40 0 0 1-40-40V64a40 40 0 0 1 40-40z" opacity=".2" fill="currentColor"></path><path d="M128 176a48.054 48.054 0 0 0 48-48V64a48 48 0 0 0-96 0v64a48.054 48.054 0 0 0 48 48zM96 64a32 32 0 0 1 64 0v64a32 32 0 0 1-64 0z" fill="currentColor"></path><path d="M200.44 128.049a7.995 7.995 0 0 0-8.83 7.072a64.008 64.008 0 0 1-127.22 0a8 8 0 0 0-15.902 1.758A79.837 79.837 0 0 0 120 207.597V232a8 8 0 0 0 16 0v-24.403a79.837 79.837 0 0 0 71.512-70.718a7.999 7.999 0 0 0-7.073-8.83z" fill="currentColor"></path></symbol>
+    </svg>
+</body>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/hls.js"></script>
+</html>
